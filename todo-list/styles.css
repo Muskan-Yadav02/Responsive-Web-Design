@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+}
+a{
+    text-decoration: none; 
+}
+a:link{
+    font-style: none;
+    color:blue;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: green;
+}
+a:focus{
+    outline: 3px solid black;
+}
+a:active{
+    color: red;
+}
+li{
+    padding: 10px;  
+}
+ul{
+    font-size: medium;
+    width: fit-content;
+    margin: 0 auto;
+    border: solid;
+    background-color: lightgreen;
+    list-style-position:outside;
+    inline-size: 45%;
+}
+label {
+    font-size: x-large;
+}
+
+
+
+
