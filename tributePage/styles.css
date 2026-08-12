@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #f4efe6;
+  color: #252525;
+  line-height: 1.7;
+}
+
+#main {
+  width: min(100% - 32px, 1000px);
+  margin: 40px auto;
+  background: #fffdf8;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hero {
+  padding: 70px 30px 55px;
+  text-align: center;
+  background: #263238;
+  color: #fff;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d8b26e;
+}
+
+#title {
+  margin: 0;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 1;
+}
+
+.subtitle {
+  max-width: 600px;
+  margin: 25px auto 0;
+  font-size: 1.15rem;
+  color: #e4e4e4;
+}
+
+#img-div {
+  margin: 0;
+  padding: 35px;
+  text-align: center;
+  background: #e8e0d2;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 8px solid #fffdf8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+#img-caption {
+  max-width: 650px;
+  margin: 18px auto 0;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#tribute-info {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 55px 30px;
+}
+
+#tribute-info h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #263238;
+}
+
+#tribute-info p {
+  margin: 0 0 22px;
+}
+
+blockquote {
+  margin: 40px 0 0;
+  padding: 20px 25px;
+  border-left: 4px solid #d8b26e;
+  background: #f5f0e7;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: #263238;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+
+#tribute-link {
+  color: #d8b26e;
+  font-weight: bold;
+}
+
+#tribute-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  #main {
+    width: 100%;
+    margin: 0;
+  }
+
+  .hero {
+    padding: 55px 20px 45px;
+  }
+
+  #img-div {
+    padding: 20px;
+  }
+
+  #tribute-info {
+    padding: 40px 22px;
+  }
+}
