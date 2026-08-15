@@ -1,0 +1,69 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(to right, #d4edda, #ffffff);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff3cd, #ffffff);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #cfe2ff, #ffffff);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid #ffc107;
+  background-image: linear-gradient(to right, #fff3cd, #ffffff);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid #198754;
+  background-image: linear-gradient(to right, #d4edda, #ffffff);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid #0d6efd;
+  background-image: linear-gradient(to right, #cfe2ff, #ffffff);
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 20px;
+  width: 100px;
+  padding: 5px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #333;
+  border-radius: 50%;
+  margin: 2px;
+  height: 12px;
+  width: 12px;
+  background-color: #eee;
+}
+
+span[class~="one"] span:first-child {
+  background-image: linear-gradient(to bottom, #ffd700, #ffb700);
+}
+
+span[class~="two"] span:nth-child(-n+2) {
+  background-image: linear-gradient(to bottom, #ffd700, #ffb700);
+}
+
+span[class~="three"] span {
+  background-image: linear-gradient(to bottom, #ffd700, #ffb700);
+}
