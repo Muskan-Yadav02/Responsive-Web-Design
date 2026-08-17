@@ -1,0 +1,155 @@
+:root {
+  --color0: #f1f5f9;
+  --color1: #dbeafe;
+  --color2: #bfdbfe;
+  --color3: #93c5fd;
+  --color4: #60a5fa;
+  --color5: #2563eb;
+
+  --solid-border: 3px solid #1e293b;
+  --dashed-border: 3px dashed #64748b;
+}
+
+.available-0 {
+  background-color: var(--color0);
+}
+
+.available-1 {
+  background-color: var(--color1);
+}
+
+.available-2 {
+  background-color: var(--color2);
+}
+
+.available-3 {
+  background-color: var(--color3);
+}
+
+.available-4 {
+  background-color: var(--color4);
+}
+
+.available-5 {
+  background-color: var(--color5);
+}
+
+
+
+#legend-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%,
+    var(--color0) 16%,
+    var(--color1) 16%,
+    var(--color1) 33%,
+    var(--color2) 33%,
+    var(--color2) 50%,
+    var(--color3) 50%,
+    var(--color3) 67%,
+    var(--color4) 67%,
+    var(--color4) 83%,
+    var(--color5) 83%,
+    var(--color5) 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #1e293b;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+caption {
+  padding: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: left;
+  background: #334155;
+}
+
+th,
+td {
+  height: 62px;
+  padding: 12px;
+  text-align: center;
+  border-right: 1px solid #475569;
+}
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+
+.half td {
+  border-bottom: var(--dashed-border);
+}
+
+thead th {
+  background: #334155;
+  color: #f8fafc;
+  font-weight: 700;
+}
+
+th.time {
+  width: 120px;
+  background: #1e293b;
+  color: #cbd5e1;
+  white-space: nowrap;
+}
+
+td {
+  transition: transform 0.15s ease;
+}
+
+td:hover {
+  transform: scale(0.92);
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
+
+#legend {
+  margin-top: 30px;
+  padding: 18px;
+  background: #1e293b;
+  border-radius: 12px;
+}
+
+#legend > span {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.legend-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
