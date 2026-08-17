@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Web Development Handbook</title> 
+    <link rel="stylesheet" href="styles.css"> 
+  </head> 
+  <body> 
+    <nav id="navbar"> 
+      <header>
+        Web Development Handbook
+      </header> 
+      <a class="nav-link" href="#Getting_Started">
+        Getting Started
+      </a> 
+      <a class="nav-link" href="#HTML_Foundations">
+        HTML Foundations
+      </a> 
+      <a class="nav-link" href="#CSS_Layout">
+        CSS Layout
+      </a> 
+      <a class="nav-link" href="#JavaScript_Basics">
+          JavaScript Basics
+      </a> 
+      <a class="nav-link" href="#Debugging_and_Testing">
+        Debugging and Testing
+      </a> 
+    </nav> 
+    <main id="main-doc"> 
+      <section class="main-section" id="Getting_Started"> 
+        <header>
+          Getting Started
+        </header> 
+        <p>
+          Web development begins with three core technologies: HTML, CSS, and JavaScript.
+        </p> 
+        <p>
+          HTML defines the structure of a page, CSS controls its appearance, and JavaScript adds behavior.
+        </p> 
+        <p>
+          A simple HTML document can begin with the following declaration:
+        </p> 
+        <code>
+          &lt;!DOCTYPE html&gt;
+        </code> 
+        <ul> 
+          <li>Choose a code editor.</li> 
+          <li>Create a project folder.</li> 
+          <li>Add an HTML file.</li> 
+        </ul> 
+        <p>
+          Keeping your files organized makes larger projects easier to maintain.
+        </p> 
+        </section> 
+        <section class="main-section" id="HTML_Foundations"> 
+          <header>
+            HTML Foundations
+          </header> 
+          <p>
+            HTML uses elements to describe the meaning and structure of content.
+          </p>
+          <p>
+            Most elements have an opening tag and a closing tag.
+          </p> 
+          <code>
+            &lt;h1&gt;Welcome to my website&lt;/h1&gt;
+          </code> 
+          <p>
+            Headings should describe the hierarchy of information on a page.
+          </p> 
+          <p>
+            Semantic elements such as 
+            <code>
+              &lt;main&gt;
+            </code> and 
+            <code>
+              &lt;nav&gt;
+            </code>
+            make documents easier to understand.
+          </p> 
+          <ul> 
+            <li>Use headings in logical
+            order.</li>
+            <li>Give images useful
+            alternative text.</li> <li>Use semantic HTML whenever possible.</li>
+          </ul> 
+          </section> 
+          <section class="main-section" id="CSS_Layout"> 
+            <header>
+              CSS Layout
+            </header> 
+            <p>
+              CSS controls how HTML elements are displayed and positioned.
+            </p> 
+            <p>
+              Modern layouts commonly use Flexbox and Grid.
+            </p> 
+            <code>.
+              container { 
+                display: flex; 
+              }
+            </code> 
+            <p>
+              Flexbox is particularly useful when arranging elements along one dimension.
+            </p> 
+            <p>
+              Grid is useful when you need control over both rows and columns.
+            </p> 
+            <code>
+              .layout { display: grid; grid-template-columns: 1fr 2fr; }
+            </code> 
+            <ul> 
+              <li>Start with a simple
+              layout.</li> 
+              <li>Use responsive units when appropriate.</li> 
+              <li>Test layouts at different screen widths.</li> 
+            </ul> 
+          </section> 
+          <section class="main-section" id="JavaScript_Basics"> 
+            <header>
+              JavaScript Basics
+            </header> 
+            <p>
+              JavaScript allows a webpage to respond to user interaction.
+            </p> 
+            <p>
+              Variables can store values that your program needs to use later.
+            </p> 
+            <code>
+              const message = "Hello, developer!";
+            </code> 
+            <p>
+              Functions group reusable pieces of logic together.
+            </p> 
+            <p>
+              Events allow JavaScript
+              to react when users click, type, or interact with elements
+            </p> 
+            <code>
+              button.addEventListener("click", handleClick)
+            </code> 
+            <ul> 
+              <li>Use meaningful variable names.</li> 
+              <li>Keep functions focused on one task.</li> 
+              <li>Prefer modern JavaScript syntax.</li>
+            </ul> 
+          </section> 
+          <section class="main-section" id="Debugging_and_Testing"> 
+            <header>
+              Debugging and Testing
+            </header> 
+            <p>
+              Debugging is the process of finding and fixing problems in your code.
+            </p> 
+            <p>
+              Browser developer tools provide useful information about HTML, CSS, and JavaScript errors.
+            </p> 
+            <code>
+              console.log("Checking the current value");
+            </code> 
+            <p>
+              Testing small pieces of functionality can prevent bugs from spreading through an application.
+            </p> 
+            <p>
+              When something fails, reproduce the problem before attempting to fix it.
+            </p> 
+            <code>
+              if (value === expected)
+              {   
+                console.log("Test passed"); 
+              }
+            </code> 
+            <ul> 
+              <li>Read error messages carefully.</li> 
+              <li>Check the browser console.</li> 
+              <li>Test changes one step at a time.</li> 
+            </ul> 
+          </section>
+    </main> 
+  </body> 
+</html>
