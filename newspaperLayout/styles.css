@@ -1,0 +1,20 @@
+.newspaper-layout {
+  max-width: 1200px;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+
+  gap: 1rem;
+  background: #f8f4e9;
+  border: 1px solid #2d2a26;
+}
